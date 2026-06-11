@@ -342,73 +342,132 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="wrap">
-        <p class="sec-tag">Get In Touch</p>
-        <h2 class="sec-title">Let's Connect</h2>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <div class="c-item">
-              <div class="c-ico blue"><i class="bi bi-envelope-fill" aria-hidden="true"></i></div>
-              <div>
-                <div class="c-label">Email</div>
-                <div class="c-val">ronncharlesd8@gmail.com</div>
-              </div>
-            </div>
-            <div class="c-item">
-              <div class="c-ico blue"><i class="bi bi-facebook" aria-hidden="true"></i></div>
-              <div>
-                <div class="c-label">Facebook</div>
-                <div class="c-val">facebook.com/Ctrl.Ch4rles</div>
-              </div>
-            </div>
-            <div class="c-item">
-              <div class="c-ico pink"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i></div>
-              <div>
-                <div class="c-label">Location</div>
-                <div class="c-val">Panabo City, Davao del Norte</div>
-              </div>
-            </div>
-            <div class="status-card">
-              <div class="status-label">Current status</div>
-              <div class="status-row">
-                <div class="status-dot" aria-hidden="true"></div>
-                <span class="status-text">Open to opportunities</span>
-              </div>
-              <p class="status-note">4th Year IS Student · Available for internship & project work</p>
-            </div>
+<!-- Contact -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <p class="sec-tag">Get In Touch</p>
+    <h2 class="sec-title">Let's Connect</h2>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <div class="c-item">
+          <div class="c-ico blue">
+            <i class="bi bi-envelope-fill"></i>
           </div>
-          <form class="glass-form" id="contact-form" novalidate>
-            <input type="hidden" name="access_key" value="4f29e8db-8adf-4c56-85b9-1f265ca3ee6b">
-            <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
-            <div class="form-row">
-              <div>
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
-              </div>
-              <div>
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="your@email.com" autocomplete="email" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input id="subject" name="subject" type="text" placeholder="Collaboration, internship, project..." required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
-            </div>
-            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-            <button class="send-btn" type="submit">
-              <span class="send-btn-text">Send Message</span>
-              <i class="bi bi-send-fill send-btn-icon" aria-hidden="true"></i>
-            </button>
-          </form>
+          <div>
+            <div class="c-label">Email</div>
+            <div class="c-val">ronncharlesd8@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="c-item">
+          <div class="c-ico blue">
+            <i class="bi bi-facebook"></i>
+          </div>
+          <div>
+            <div class="c-label">Facebook</div>
+            <div class="c-val">facebook.com/Ctrl.Ch4rles</div>
+          </div>
+        </div>
+
+        <div class="c-item">
+          <div class="c-ico pink">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div>
+            <div class="c-label">Location</div>
+            <div class="c-val">Panabo City, Davao del Norte</div>
+          </div>
+        </div>
+
+        <div class="status-card">
+          <div class="status-label">Current Status</div>
+          <div class="status-row">
+            <div class="status-dot"></div>
+            <span class="status-text">Open to Opportunities</span>
+          </div>
+          <p class="status-note">
+            4th Year IS Student · Available for Internship & Project Work
+          </p>
         </div>
       </div>
-    </section>
+
+      <form class="glass-form" id="contact-form">
+
+        <!-- Web3Forms Access Key -->
+        <input
+          type="hidden"
+          name="access_key"
+          value="4f29e8db-8adf-4c56-85b9-1f265ca3ee6b"
+        >
+
+        <!-- Honeypot -->
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display:none;"
+        >
+
+        <div class="form-row">
+          <div>
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              required
+            >
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="your@email.com"
+              required
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            placeholder="Collaboration, Internship, Project..."
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Tell me about your project or opportunity..."
+            required
+          ></textarea>
+        </div>
+
+        <p id="form-status" class="form-status"></p>
+
+        <button type="submit" class="send-btn">
+          <span class="send-btn-text">Send Message</span>
+          <i class="bi bi-send-fill send-btn-icon"></i>
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+</section>
 
   </main>
 
