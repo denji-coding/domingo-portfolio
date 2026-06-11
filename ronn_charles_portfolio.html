@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ronn Charles O. Domingo — System Designer, Analyst & UI/UX enthusiast. BS Information Systems portfolio.">
   <title>DOMINGO - PORTFOLIO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -21,24 +22,33 @@
   <!-- Navigation -->
   <nav>
     <div class="wrap">
-      <div class="nav-inner">
-        <div class="nav-logo">Ronn.dev</div>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
+        <div class="nav-inner">
+          <div class="nav-logo">
+            <a href="#hero" aria-label="Go to Home Section">
+                <img src="assets/images/Logo.png" alt="Ronn Charles O. Domingo Logo">
+            </a>
+          </div>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button class="nav-btn" type="button" data-scroll="contact">
+                Hire Me
+            </button>
         </div>
-        <button class="nav-btn" type="button" data-scroll="contact">Hire Me</button>
-      </div>
     </div>
   </nav>
 
   <main>
 
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="wrap">
         <div class="hero-badge">
           <div class="badge-dot"></div>
@@ -53,9 +63,17 @@
           UI/UX Enthusiast &nbsp;<span>•</span>&nbsp; Team Leader
         </p>
         <div class="hero-btns">
-          <button class="btn-primary" type="button" data-scroll="projects">View Projects →</button>
-          <button class="btn-outline" type="button" data-scroll="contact">Get In Touch</button>
-          <a class="btn-outline" href="assets/pdf/CV-DOMINGO.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <button class="btn-primary" type="button" data-scroll="projects">
+            View Projects <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </button>
+          <!-- <button class="btn-outline" type="button" data-scroll="contact">Get In Touch</button> -->
+          <a class="btn-outline resume-btn"
+            href="assets/pdf/CV-DOMINGO.pdf"
+            download="CV-DOMINGO.pdf"
+            rel="noopener">
+              <i class="bi bi-download" aria-hidden="true"></i>
+              <span>Download Resume</span>
+          </a>
         </div>
         <div class="scroll-hint">
           <div class="scroll-line"></div>
@@ -89,7 +107,7 @@
               I also take on the role of a System Analyst — studying system flows, functions, data, and diagrams. I like breaking down complex systems and understanding how each part connects. In group projects, I often step up as team leader, organizing tasks and guiding teammates to meet our goals on time.
             </p>
             <div class="location-row">
-              <span class="location-icon">📍</span>
+              <i class="bi bi-geo-alt-fill location-icon" aria-hidden="true"></i>
               <span class="location-text">Purok 18, Upper New Visayas, Panabo City, Davao del Norte</span>
             </div>
             <div class="about-stats">
@@ -128,7 +146,7 @@
         </div>
         <div class="bento">
           <div class="bento-card wide">
-            <div class="skill-icon">🎨</div>
+            <div class="skill-icon"><i class="bi bi-palette-fill" aria-hidden="true"></i></div>
             <div class="skill-name">UI/UX & System Design</div>
             <div class="skill-desc">Designing clean, user-friendly interfaces and system architectures. Focused on simplicity, usability, and making complex workflows easy to understand.</div>
             <div class="tech-pills">
@@ -139,7 +157,7 @@
             </div>
           </div>
           <div class="bento-card">
-            <div class="skill-icon">🔍</div>
+            <div class="skill-icon"><i class="bi bi-diagram-3-fill" aria-hidden="true"></i></div>
             <div class="skill-name">System Analysis</div>
             <div class="skill-desc">Studying system flows, functions, data, and diagrams. Breaking down complex systems to understand how parts connect.</div>
             <div class="tech-pills">
@@ -149,7 +167,7 @@
             </div>
           </div>
           <div class="bento-card">
-            <div class="skill-icon">🗂️</div>
+            <div class="skill-icon"><i class="bi bi-file-earmark-text-fill" aria-hidden="true"></i></div>
             <div class="skill-name">Documentation</div>
             <div class="skill-desc">Creating clear system documentation, technical specs, and project reports.</div>
             <div class="tech-pills">
@@ -158,7 +176,7 @@
             </div>
           </div>
           <div class="bento-card">
-            <div class="skill-icon">🤝</div>
+            <div class="skill-icon"><i class="bi bi-people-fill" aria-hidden="true"></i></div>
             <div class="skill-name">Team Leadership</div>
             <div class="skill-desc">Organizing tasks, guiding teammates, and keeping group projects on track and on time.</div>
             <div class="tech-pills">
@@ -167,7 +185,7 @@
             </div>
           </div>
           <div class="bento-card">
-            <div class="skill-icon">💻</div>
+            <div class="skill-icon"><i class="bi bi-laptop-fill" aria-hidden="true"></i></div>
             <div class="skill-name">Information Systems</div>
             <div class="skill-desc">Core IS knowledge including databases, system lifecycles, and IT infrastructure.</div>
             <div class="tech-pills">
@@ -180,54 +198,110 @@
       </div>
     </section>
 
+    <!-- Achievements -->
+    <section class="section" id="achievements">
+      <div class="wrap">
+        <p class="sec-tag">Credentials</p>
+        <h2 class="sec-title">
+          Achievements & <span class="grad-highlight">Certifications</span>
+        </h2>
+        <p class="achievements-intro">
+          Professional certifications earned in IT and programming, validating skills in computer systems and Python development.
+        </p>
+        <div class="certificates-grid">
+
+          <article class="cert-card reveal">
+            <div class="cert-glow cert-glow--blue" aria-hidden="true"></div>
+            <div class="cert-inner">
+              <div class="cert-corner cert-corner--tl" aria-hidden="true"></div>
+              <div class="cert-corner cert-corner--tr" aria-hidden="true"></div>
+              <div class="cert-corner cert-corner--bl" aria-hidden="true"></div>
+              <div class="cert-corner cert-corner--br" aria-hidden="true"></div>
+              <div class="cert-preview">
+                <iframe src="assets/pdf/NCII.pdf#toolbar=0&navpanes=0&view=FitH" title="NC II Certificate preview" loading="lazy"></iframe>
+              </div>
+              <div class="cert-header">
+                <div class="cert-seal cert-seal--blue">
+                  <i class="bi bi-award-fill cert-seal-icon" aria-hidden="true"></i>
+                  <div class="cert-seal-ring" aria-hidden="true"></div>
+                </div>
+                <span class="cert-badge">TESDA</span>
+              </div>
+              <h3 class="cert-title">NC II — Computer Systems Servicing</h3>
+              <p class="cert-issuer">Technical Education and Skills Development Authority</p>
+              <p class="cert-desc">
+                National Certificate Level II in Computer Systems Servicing, demonstrating competency in installing, configuring, and maintaining computer systems and networks.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-date">Certified</span>
+                <a class="cert-link" href="assets/pdf/NCII.pdf" target="_blank" rel="noopener">
+                  View Certificate <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-glow cert-glow--purple" aria-hidden="true"></div>
+            <div class="cert-inner">
+              <div class="cert-corner cert-corner--tl" aria-hidden="true"></div>
+              <div class="cert-corner cert-corner--tr" aria-hidden="true"></div>
+              <div class="cert-corner cert-corner--bl" aria-hidden="true"></div>
+              <div class="cert-corner cert-corner--br" aria-hidden="true"></div>
+              <div class="cert-preview">
+                <iframe src="assets/pdf/Python_Essentials_1_certificate_domingo-ronncharles-dnsc-edu-ph_a7ecc526-c4e8-4297-9c83-a63f1d0201b4.pdf#toolbar=0&navpanes=0&view=FitH" title="Python Essentials 1 Certificate preview" loading="lazy"></iframe>
+              </div>
+              <div class="cert-header">
+                <div class="cert-seal cert-seal--purple">
+                  <i class="bi bi-filetype-py cert-seal-icon" aria-hidden="true"></i>
+                  <div class="cert-seal-ring" aria-hidden="true"></div>
+                </div>
+                <span class="cert-badge">Cisco</span>
+              </div>
+              <h3 class="cert-title">Python Essentials 1</h3>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+              <p class="cert-desc">
+                Completed Python Essentials 1, covering fundamental programming concepts, data types, control flow, functions, and object-oriented programming in Python.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-date">Certified</span>
+                <a class="cert-link" href="assets/pdf/Python_Essentials_1_certificate_domingo-ronncharles-dnsc-edu-ph_a7ecc526-c4e8-4297-9c83-a63f1d0201b4.pdf" target="_blank" rel="noopener">
+                  View Certificate <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Projects -->
     <section class="section" id="projects">
       <div class="wrap">
         <p class="sec-tag">Portfolio</p>
         <h2 class="sec-title">Featured Projects</h2>
         <div class="projects-grid">
-          <article class="proj-card">
-            <div class="proj-preview p1">🗃️</div>
-            <div class="proj-body">
-              <h3 class="proj-title">System Design Project</h3>
-              <p class="proj-desc">Designed a complete information system with UI mockups, user flows, and documentation as System Designer and System Analyst.</p>
-              <div class="proj-stack">
-                <span class="pill">System Design</span>
-                <span class="pill">UI/UX</span>
-                <span class="pill">Figma</span>
-              </div>
-              <div class="proj-btns">
-                <a class="pbtn primary" href="#">View Project ↗</a>
-              </div>
+          <article class="proj-card proj-card--featured">
+            <div class="proj-preview proj-preview--logo">
+              <img src="assets/images/company-logo.png" alt="Migrants Venture Corporation logo" class="proj-logo">
             </div>
-          </article>
-          <article class="proj-card">
-            <div class="proj-preview p2">📊</div>
             <div class="proj-body">
-              <h3 class="proj-title">System Analysis & Documentation</h3>
-              <p class="proj-desc">Produced full system analysis reports including DFDs, ERDs, and use case diagrams for a group capstone project.</p>
+              <p class="proj-client">Migrants Venture Corporation</p>
+              <h3 class="proj-title">HRMS with Payroll System</h3>
+              <p class="proj-desc">
+                A full-scale Human Resource Management and Payroll System built for Migrants Venture Corporation. Handles employee records, attendance tracking, leave management, and automated payroll processing — designed to streamline HR operations and reduce manual workload.
+              </p>
               <div class="proj-stack">
-                <span class="pill">System Analysis</span>
-                <span class="pill">DFD</span>
-                <span class="pill">ERD</span>
-              </div>
-              <div class="proj-btns">
-                <a class="pbtn primary" href="#">View Project ↗</a>
-              </div>
-            </div>
-          </article>
-          <article class="proj-card">
-            <div class="proj-preview p3">🧩</div>
-            <div class="proj-body">
-              <h3 class="proj-title">Tag Project — IS Group Work</h3>
-              <p class="proj-desc">Contributed as System Designer and System Analyst in a collaborative group project, handling both design and analysis deliverables.</p>
-              <div class="proj-stack">
-                <span class="pill">Team Lead</span>
+                <span class="pill">HRMS</span>
+                <span class="pill">Payroll</span>
                 <span class="pill">System Design</span>
-                <span class="pill">Analysis</span>
+                <span class="pill">Web App</span>
               </div>
               <div class="proj-btns">
-                <a class="pbtn primary" href="#">View Project ↗</a>
+                <a class="pbtn primary" href="https://mvc-rose.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  View Project <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
           </article>
@@ -274,21 +348,21 @@
         <div class="contact-grid">
           <div class="contact-info">
             <div class="c-item">
-              <div class="c-ico blue">📧</div>
+              <div class="c-ico blue"><i class="bi bi-envelope-fill" aria-hidden="true"></i></div>
               <div>
                 <div class="c-label">Email</div>
                 <div class="c-val">ronncharlesd8@gmail.com</div>
               </div>
             </div>
             <div class="c-item">
-              <div class="c-ico blue">👥</div>
+              <div class="c-ico blue"><i class="bi bi-facebook" aria-hidden="true"></i></div>
               <div>
                 <div class="c-label">Facebook</div>
                 <div class="c-val">facebook.com/Ctrl.Ch4rles</div>
               </div>
             </div>
             <div class="c-item">
-              <div class="c-ico pink">📍</div>
+              <div class="c-ico pink"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i></div>
               <div>
                 <div class="c-label">Location</div>
                 <div class="c-val">Panabo City, Davao del Norte</div>
@@ -303,26 +377,32 @@
               <p class="status-note">4th Year IS Student · Available for internship & project work</p>
             </div>
           </div>
-          <form class="glass-form" onsubmit="event.preventDefault(); sendMsg();">
+          <form class="glass-form" id="contact-form" novalidate>
+            <input type="hidden" name="access_key" value="4f29e8db-8adf-4c56-85b9-1f265ca3ee6b">
+            <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
             <div class="form-row">
               <div>
                 <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Your name" autocomplete="name">
+                <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
               </div>
               <div>
                 <label for="email">Email</label>
-                <input id="email" type="email" placeholder="your@email.com" autocomplete="email">
+                <input id="email" name="email" type="email" placeholder="your@email.com" autocomplete="email" required>
               </div>
             </div>
             <div class="form-group">
               <label for="subject">Subject</label>
-              <input id="subject" type="text" placeholder="Collaboration, internship, project...">
+              <input id="subject" name="subject" type="text" placeholder="Collaboration, internship, project..." required>
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" placeholder="Tell me about your project or opportunity..."></textarea>
+              <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
             </div>
-            <button class="send-btn" type="submit">Send Message ✦</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <button class="send-btn" type="submit">
+              <span class="send-btn-text">Send Message</span>
+              <i class="bi bi-send-fill send-btn-icon" aria-hidden="true"></i>
+            </button>
           </form>
         </div>
       </div>
